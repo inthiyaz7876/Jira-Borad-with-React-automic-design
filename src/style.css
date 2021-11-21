@@ -1,0 +1,86 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.card_item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.user {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.grid_column {
+  height: 400px;
+  background: #ebf0ed;
+}
+
+.card_item {
+  height: 120px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  position: relative;
+  background: #fafaf5;
+  margin: 5px;
+}
+
+.header_item {
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 4px;
+  color: #8b948f;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.card_title {
+  margin: 4px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.card_description {
+  margin: 4px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.check {
+  --borderWidth: 4px;
+  --height: 10px;
+  --width: 4px;
+  --borderColor: white;
+  transform: rotate(45deg);
+  height: var(--height);
+  width: var(--width);
+  border-bottom: var(--borderWidth) solid var(--borderColor);
+  border-right: var(--borderWidth) solid var(--borderColor);
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+}
+button.tick_button {
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  bottom: 6px;
+  left: 10px;
+  background: #78b13f;
+  cursor: pointer;
+}
