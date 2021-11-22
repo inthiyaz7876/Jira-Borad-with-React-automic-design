@@ -31,6 +31,7 @@ p {
   position: relative;
   background: #fafaf5;
   margin: 5px;
+  padding: 5px;
 }
 
 .header_item {
@@ -84,6 +85,11 @@ button.tick_button {
   background: #78b13f;
   cursor: pointer;
 }
+.priority {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 5px;
+}
 /* Tooltip CSS */
 .tooltip {
   position: inherit;
@@ -99,9 +105,10 @@ button.tick_button {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  align-items: right;
   /* Position the tooltip */
   position: absolute;
+  bottom: 20px;
+  right: 15px;
   z-index: 1;
 }
 
