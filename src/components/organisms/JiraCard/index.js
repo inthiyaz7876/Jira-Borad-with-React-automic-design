@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Card from '../../atoms/Card';
+import Tooltip from '../../atoms/Tooltip';
 import TickButton from '../../molecules/TickButton';
 
 const JiraCard = ({ content }) => {
@@ -9,14 +10,15 @@ const JiraCard = ({ content }) => {
         <div class="card_title">{item.title}</div>
         <div class="card_description">{item.description}</div>
         <div class="priority">{item.priority}</div>
-        <span class="tooltip">
-          <img
-            src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
-            class="user"
-          ></img>
-          <span class="tooltiptext">{item.assignee}</span>
-        </span>
-
+        <Tooltip
+          content={
+            <img
+              src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+              class="user"
+            ></img>
+          }
+          text={item.assignee}
+        />
         <TickButton />
       </div>
     );
