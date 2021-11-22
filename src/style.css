@@ -84,3 +84,27 @@ button.tick_button {
   background: #78b13f;
   cursor: pointer;
 }
+/* Tooltip CSS */
+.tooltip {
+  position: inherit;
+  display: inline-block;
+  border-bottom: 1px dotted rgb(199, 188, 188);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: rgb(158, 145, 145);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  align-items: right;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
